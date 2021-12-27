@@ -2,11 +2,12 @@
 @import "./helpers/variable";
 @import "./helpers/mixin";
 
+// Import Font
+@import url('//db.onlinewebfonts.com/c/3cbd18ee75a23e404e78614692aa64e8?family=Ford+Antenna+Light');
+
 // Import Reset And Global
 @import "./base/reset";
 @import "./base/global";
-
-@import url('//db.onlinewebfonts.com/c/3cbd18ee75a23e404e78614692aa64e8?family=Ford+Antenna+Light');
 
 // Import Components
 @import "./components/button";
