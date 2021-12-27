@@ -1,0 +1,27 @@
+// START PRIVACY
+.privacy {
+  .container {
+    .privacy__container--bg {
+      background-color: $primary-dark;
+      padding: 20px 0;
+
+      h1{
+          font-size: 4rem;
+          color: white;
+          margin-top: 20px;
+      }
+      h3{
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+        color: white;
+        margin: 15px 0;
+        a{
+            text-decoration: underline;
+            color: rgb(55,169,232);
+            font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+// END PRIVACY

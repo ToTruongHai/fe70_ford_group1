@@ -141,8 +141,9 @@ a:hover {
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
-  background-color: #f5f9fe;
+  font-family: "Ford Antenna Light", arial, helvetica, sans-serif;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -157,6 +158,101 @@ html {
   .wrapper {
     width: 100%;
   }
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.btn--disclosures {
+  width: 100%;
+  background-color: transparent;
+  color: #0276b3;
+  border: transparent;
+  margin: 20px 0;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+.btn--disclosures i {
+  transition: all 0.5s;
+}
+.btn--disclosures:focus {
+  box-shadow: none;
+  border: 1px solid #0276b3;
+  color: #0276b3;
+}
+.btn--disclosures:hover {
+  color: #0276b3;
+}
+.btn--disclosures.collapsed i {
+  transform: rotateZ(180deg);
+}
+
+.btn--privacy {
+  background-color: #0276b3;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 0px;
+}
+.btn--privacy:hover {
+  background-color: white;
+}
+
+.card--bg {
+  background-color: #f7f7f7;
+  max-height: 200px;
+  overflow: scroll;
+  padding: 25px 100px;
+  text-align: justify;
+  border: none;
+  overflow-x: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.card--bg::-webkit-scrollbar {
+  width: 10px;
+}
+.card--bg::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.card--bg::-webkit-scrollbar-thumb {
+  background: #0276b3;
+}
+.card--bg::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.card--bg li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.card--bg li h2, .card--bg li p {
+  line-height: 1.5;
+  font-weight: 500;
+  color: #333;
+}
+
+.privacy .container .privacy__container--bg {
+  background-color: #102b4e;
+  padding: 20px 0;
+}
+.privacy .container .privacy__container--bg h1 {
+  font-size: 4rem;
+  color: white;
+  margin-top: 20px;
+}
+.privacy .container .privacy__container--bg h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: white;
+  margin: 15px 0;
+}
+.privacy .container .privacy__container--bg h3 a {
+  text-decoration: underline;
+  color: #37a9e8;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=app.css.map */

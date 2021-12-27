@@ -1,6 +1,7 @@
 body{
-    font-family: 'Nunito Sans', sans-serif;
-    background-color: #f5f9fe;
+    font-family: "Ford Antenna Light",arial,helvetica,sans-serif;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
 }
 
 html{
@@ -13,4 +14,8 @@ html{
     @include Responsive(XL){
         width: 100%;
     }
+}
+
+.container{
+    max-width: 1440px;
 }
