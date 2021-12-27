@@ -5,23 +5,109 @@
       background-color: $primary-dark;
       padding: 20px 0;
 
-      h1{
-          font-size: 4rem;
-          color: white;
-          margin-top: 20px;
+      h1 {
+        font-size: 4rem;
+        color: white;
+        margin-top: 20px;
       }
-      h3{
+      h3 {
         font-size: 1.4rem;
         letter-spacing: 0.5px;
         color: white;
         margin: 15px 0;
-        a{
-            text-decoration: underline;
-            color: rgb(55,169,232);
-            font-size: 1.5rem;
+        line-height: 1.4;
+        a {
+          text-decoration: underline;
+          color: rgb(55, 169, 232);
+          font-size: 1.5rem;
+        }
+      }
+
+      @include Responsive(SM) {
+        h1 {
+          font-size: 2.5rem;
+          padding: 0 20px;
+        }
+        h3 {
+          font-size: 1.3rem;
+          padding: 0 20px;
+
+          a {
+            font-size: 1.2rem;
+          }
         }
       }
     }
   }
 }
 // END PRIVACY
+
+// START SEARCH
+.search {
+  .container {
+    .search__container--bg {
+      background-color: #333;
+      margin: 0;
+      padding: 20px 50px;
+      justify-content: space-between;
+      align-items: center;
+      .search__input {
+        position: relative;
+        form {
+          i {
+            position: absolute;
+            top: 25%;
+            left: 0;
+            font-size: 2rem;
+            color: white;
+          }
+          input {
+            background-color: transparent;
+            border: none;
+            color: white;
+            padding: 0 0 0 30px;
+            font-size: 2.5rem;
+
+            &::placeholder {
+              color: white;
+            }
+
+            &:focus {
+              border: none;
+              box-shadow: none;
+            }
+          }
+        }
+
+        @include Responsive(MD){
+            display: none;
+        }
+      }
+
+      .search__menu {
+        ul {
+          display: flex;
+          gap: 2rem;
+          li {
+            font-size: 1.4rem;
+            a {
+              color: #a7a7a7;
+            }
+            &.active {
+              font-weight: bold;
+              a {
+                color: white;
+              }
+            }
+            &:hover{
+                a{
+                    color: white;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END SEARCH

@@ -163,6 +163,11 @@ html {
 .container {
   max-width: 1440px;
 }
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0;
+  }
+}
 
 .btn--disclosures {
   width: 100%;
@@ -228,10 +233,20 @@ html {
   margin: 10px 0;
   font-size: 1.2rem;
 }
-.card--bg li h2, .card--bg li p {
+.card--bg li h2,
+.card--bg li p {
   line-height: 1.5;
   font-weight: 500;
   color: #333;
+}
+@media only screen and (max-width: 576px) {
+  .card--bg {
+    padding: 25px 30px;
+    text-align: left;
+  }
+  .card--bg li {
+    font-size: 1.1rem;
+  }
 }
 
 .privacy .container .privacy__container--bg {
@@ -248,11 +263,81 @@ html {
   letter-spacing: 0.5px;
   color: white;
   margin: 15px 0;
+  line-height: 1.4;
 }
 .privacy .container .privacy__container--bg h3 a {
   text-decoration: underline;
   color: #37a9e8;
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 576px) {
+  .privacy .container .privacy__container--bg h1 {
+    font-size: 2.5rem;
+    padding: 0 20px;
+  }
+  .privacy .container .privacy__container--bg h3 {
+    font-size: 1.3rem;
+    padding: 0 20px;
+  }
+  .privacy .container .privacy__container--bg h3 a {
+    font-size: 1.2rem;
+  }
+}
+
+.search .container .search__container--bg {
+  background-color: #333;
+  margin: 0;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.search .container .search__container--bg .search__input {
+  position: relative;
+}
+.search .container .search__container--bg .search__input form i {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  font-size: 2rem;
+  color: white;
+}
+.search .container .search__container--bg .search__input form input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0 0 0 30px;
+  font-size: 2.5rem;
+}
+.search .container .search__container--bg .search__input form input::placeholder {
+  color: white;
+}
+.search .container .search__container--bg .search__input form input:focus {
+  border: none;
+  box-shadow: none;
+}
+@media only screen and (max-width: 768px) {
+  .search .container .search__container--bg .search__input {
+    display: none;
+  }
+}
+.search .container .search__container--bg .search__menu ul {
+  display: flex;
+  gap: 2rem;
+}
+.search .container .search__container--bg .search__menu ul li {
+  font-size: 1.4rem;
+}
+.search .container .search__container--bg .search__menu ul li a {
+  color: #a7a7a7;
+}
+.search .container .search__container--bg .search__menu ul li.active {
+  font-weight: bold;
+}
+.search .container .search__container--bg .search__menu ul li.active a {
+  color: white;
+}
+.search .container .search__container--bg .search__menu ul li:hover a {
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

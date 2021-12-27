@@ -18,4 +18,7 @@ html{
 
 .container{
     max-width: 1440px;
+    @include Responsive(XL){
+        padding: 0;
+    }
 }

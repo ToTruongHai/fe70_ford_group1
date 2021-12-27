@@ -6,6 +6,7 @@
   text-align: justify;
   border: none;
   overflow-x: hidden;
+
   /* width */
   &::-webkit-scrollbar {
     width: 10px;
@@ -26,15 +27,24 @@
     background: #555;
   }
 
-  li{
-      margin: 10px 0;
-      font-size: 1.2rem;
-      
+  li {
+    margin: 10px 0;
+    font-size: 1.2rem;
 
-      h2, p{
-          line-height: 1.5;
-          font-weight: 500;
-          color: #333;
-      }
+    h2,
+    p {
+      line-height: 1.5;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+
+  @include Responsive(SM) {
+    padding: 25px 30px;
+    text-align: left;
+
+    li {
+      font-size: 1.1rem;
+    }
   }
 }
