@@ -1,0 +1,40 @@
+.btn--disclosures {
+  width: 100%;
+  background-color: transparent;
+  color: $primary-light;
+  border: transparent;
+  margin: 20px 0;
+  padding: 10px 0;
+  font-size: 1.4rem;
+
+  i {
+    transition: all 0.5s;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border: 1px solid $primary-light;
+    color: $primary-light;
+  }
+  &:hover{
+    color: $primary-light;
+  }
+  
+  &.collapsed {
+    i {
+      transform: rotateZ(180deg);
+    }
+  }
+}
+
+.btn--privacy{
+    background-color: $primary-light;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 0px;
+
+    &:hover{
+        background-color: white;
+    }
+}
