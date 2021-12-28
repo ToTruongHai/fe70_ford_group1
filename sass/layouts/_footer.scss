@@ -339,29 +339,53 @@
       border-color: #e7e7e7;
       padding: 20px 50px;
 
-      .tertiary__language{
-        .tertiary__language-icon{
-          a{
+      .tertiary__language {
+        .tertiary__language-icon {
+          a {
             align-items: center;
-            i{
+            i {
               font-size: 2rem;
               margin-right: 20px;
             }
-            span{
+            span {
               font-size: 1.2rem;
               text-decoration: underline;
             }
           }
         }
-        p{
+        p {
           margin: 20px 0;
           font-size: 1.2rem;
+          color: #555;
+        }
+        .tertiary__shortcut {
+          .tertiary__shortcut-items {
+            display: inline-block;
+            margin: 0 20px 0 0;
+            a {
+              display: block;
+              color: #555;
+              font-size: 1.2rem;
+              padding: 8px 0;
+            }
+
+            @include Responsive(SM){
+              display: block;
+            }
+          }
         }
       }
-      .tertiary__logo{
-        img{
+      @include Responsive(MD){
+        padding: 30px 0;
+        .tertiary__language-icon{
+          padding: 0;
+        }
+      }
+      .tertiary__logo {
+        img {
           max-width: 70px;
           max-height: 50px;
+          float: right;
         }
       }
     }
