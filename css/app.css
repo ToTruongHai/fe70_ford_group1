@@ -506,7 +506,7 @@ html {
 
 .follow .container .follow__container--bg {
   background-color: #102b4e;
-  padding: 30px 50px;
+  padding: 30px 35px;
 }
 @media only screen and (max-width: 768px) {
   .follow .container .follow__container--bg {
@@ -578,6 +578,31 @@ html {
     flex-wrap: wrap;
     padding: 0;
   }
+}
+
+.tertiary .container .tertiary__container--bg {
+  background-color: #f7f7f7;
+  border-color: #e7e7e7;
+  padding: 20px 50px;
+}
+.tertiary .container .tertiary__container--bg .tertiary__language .tertiary__language-icon a {
+  align-items: center;
+}
+.tertiary .container .tertiary__container--bg .tertiary__language .tertiary__language-icon a i {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+.tertiary .container .tertiary__container--bg .tertiary__language .tertiary__language-icon a span {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.tertiary .container .tertiary__container--bg .tertiary__language p {
+  margin: 20px 0;
+  font-size: 1.2rem;
+}
+.tertiary .container .tertiary__container--bg .tertiary__logo img {
+  max-width: 70px;
+  max-height: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
