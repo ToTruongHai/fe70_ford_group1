@@ -369,7 +369,7 @@
               padding: 8px 0;
             }
 
-            @include Responsive(SM){
+            @include Responsive(MD){
               display: block;
             }
           }
@@ -386,6 +386,11 @@
           max-width: 70px;
           max-height: 50px;
           float: right;
+
+          @include Responsive(MD){
+            float: left;
+            margin-top: 10px;
+          }
         }
       }
     }
