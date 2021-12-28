@@ -165,15 +165,17 @@
 
       @include Responsive(XL) {
         .category__item--md {
-        
           .category__title {
-            padding: 0 15px;
             position: relative;
             cursor: pointer;
             padding: 0 15px 20px 15px;
-
             border-bottom: 1px solid #333;
             cursor: pointer;
+
+            @include Responsive(SM) {
+              padding: 0 0 20px 0;
+            }
+
             i {
               display: inline;
               position: absolute;
@@ -200,10 +202,9 @@
       @include Responsive(MD) {
         .category__item--sm {
           .category__title {
-            padding: 0 15px;
             position: relative;
             cursor: pointer;
-            padding: 0 15px 20px 15px;
+            padding: 0 0px 20px 15px;
             border-bottom: 1px solid #333;
             cursor: pointer;
             i {
@@ -229,6 +230,13 @@
           }
         }
       }
+      .category__item--sm {
+        .category__title {
+          @include Responsive(SM) {
+            padding: 0 0 20px 0;
+          }
+        }
+      }
       @include Responsive(MD) {
         padding: 20px 0;
       }
@@ -245,3 +253,80 @@
   }
 }
 // END CATEGORY
+
+// START FOLLOW
+.follow {
+  .container {
+    .follow__container--bg {
+      background-color: $primary-dark;
+      padding: 30px 50px;
+
+      @include Responsive(MD) {
+        padding: 30px 20px;
+      }
+      @include Responsive(SM) {
+        padding: 30px 10px;
+      }
+
+      .follow__updates-share {
+        a {
+          .follow__updates,
+          .follow__share {
+            align-items: center;
+            white-space: nowrap;
+            flex-wrap: nowrap;
+
+            span {
+              font-size: 1.7rem;
+              color: #37a9e8;
+
+              @include Responsive(SM) {
+                font-size: 1.3rem;
+              }
+            }
+          }
+
+          .follow__share {
+            @include Responsive(LG) {
+              display: none;
+            }
+          }
+        }
+        @include Responsive(SM) {
+          padding: 0;
+          a {
+            padding: 0;
+          }
+        }
+        @include Responsive(MD) {
+          border-bottom: 1px solid #a7a7a7;
+          padding: 0 0 10px 0;
+          margin: 0 0 10px 0;
+          a {
+            padding: 0;
+          }
+        }
+      }
+      .follow__ford {
+        align-items: center;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+
+        span {
+          font-size: 1.1rem;
+          color: white;
+          margin-right: 30px;
+          @include Responsive(MD) {
+            margin-bottom: 30px;
+          }
+        }
+
+        @include Responsive(MD) {
+          flex-wrap: wrap;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+// END FOLLOW
