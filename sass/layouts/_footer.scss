@@ -137,8 +137,20 @@
           margin-bottom: 20px;
           display: block;
           cursor: context-menu;
+          pointer-events: none;
           i {
             display: none;
+          }
+          @include Responsive(XL){
+            pointer-events: auto;
+          }
+        }
+        .category__title-tool{
+          @include Responsive(XL){
+            pointer-events: none;
+          }
+          @include Responsive(MD){
+            pointer-events: auto;
           }
         }
         ul {
@@ -254,8 +266,8 @@
 }
 // END CATEGORY
 
-// START FOLLOW
-.footer__follow {
+// START SOCIAL-FOLLOW
+.footer__social-follow {
   .container {
     .follow__container--bg {
       background-color: $primary-dark;
@@ -329,7 +341,7 @@
     }
   }
 }
-// END FOLLOW
+// END SOCIAL-FOLLOW
 
 // START TERTIARY
 .footer__tertiary {
