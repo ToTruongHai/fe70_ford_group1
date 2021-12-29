@@ -65,11 +65,11 @@
     <section class="disclosures">
       <div class="container">
         <button class="btn collapsed btn--disclosures" type="button" data-toggle="collapse"
-          data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          data-target="#collapseDisclosures" aria-expanded="false" aria-controls="collapseDisclosures">
           DISCLOSURES
           <i class="fas fa-chevron-up"></i>
         </button>
-        <div class="collapse" id="collapseExample">
+        <div class="collapse" id="collapseDisclosures">
           <div class="card card-body card--bg">
             <ul>
               <li>
@@ -695,7 +695,7 @@
     <!-- START CATEGORY -->
     <section class="category">
       <div class="container">
-        <div class="row category__container--bg container--flex">
+        <div class="row category__container--bg container--flex" id="category-accordion">
           <!-- THE FIRST 2 ITEMS -->
           <div class="
                 row
@@ -723,7 +723,7 @@
                 Shopping Tools
                 <i class="fas fa-chevron-down"></i>
               </a>
-              <div class="collapse category__tool" id="collapseShoppingTools">
+              <div class="collapse category__tool" id="collapseShoppingTools" data-parent="#category-accordion">
                 <ul>
                   <li><a href="#"> Build & Price</a></li>
                   <li><a href="#"> Search Inventory</a></li>
@@ -754,7 +754,7 @@
                 Finance
                 <i class="fas fa-chevron-down"></i>
               </a>
-              <div class="collapse collappseDiv" id="collapseFinance">
+              <div class="collapse collappseDiv" id="collapseFinance" data-parent="#category-accordion">
                 <ul>
                   <li><a href="#"> Ford Credit Home</a></li>
                   <li><a href="#"> Why Ford Credit</a></li>
@@ -777,7 +777,7 @@
                 Support
                 <i class="fas fa-chevron-down"></i>
               </a>
-              <div class="collapse collappseDiv" id="collapseSupport">
+              <div class="collapse collappseDiv" id="collapseSupport" data-parent="#category-accordion">
                 <ul>
                   <li><a href="#"> Support Home</a></li>
                   <li><a href="#"> Maintenance Schedule</a></li>
@@ -803,7 +803,7 @@
                 Experience Ford
                 <i class="fas fa-chevron-down"></i>
               </a>
-              <div class="collapse collappseDiv" id="collapseExperience">
+              <div class="collapse collappseDiv" id="collapseExperience" data-parent="#category-accordion">
                 <ul>
                   <li><a href="#"> Corporate</a></li>
                   <li><a href="#"> Careers</a></li>
