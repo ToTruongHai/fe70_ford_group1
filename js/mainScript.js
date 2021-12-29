@@ -49,6 +49,9 @@ function scrollFunction() {
       upBtn.style.opacity = "1";
     }
     lastScrollTop = st;
+  } else {
+    upBtn.style.visibility = "hidden";
+    upBtn.style.opacity = "0";
   }
 }
 // END FIXED-CONTENT SCRIPT
