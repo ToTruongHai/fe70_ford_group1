@@ -310,7 +310,7 @@
             padding: 0;
           }
         }
-        @include Responsive(MD) {
+        @Media only screen and (max-width: 767px) {
           border-bottom: 1px solid #a7a7a7;
           padding: 0 0 20px 0;
           margin: 0 0 20px 0;
