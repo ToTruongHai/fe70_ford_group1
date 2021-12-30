@@ -312,11 +312,14 @@
         }
         @include Responsive(MD) {
           border-bottom: 1px solid #a7a7a7;
-          padding: 0 0 10px 0;
-          margin: 0 0 10px 0;
+          padding: 0 0 20px 0;
+          margin: 0 0 20px 0;
           a {
             padding: 0;
           }
+        }
+        @include Responsive(XL) {
+          align-items: flex-end;
         }
       }
       .follow__ford {
@@ -328,14 +331,21 @@
           font-size: 1.1rem;
           color: white;
           margin-right: 30px;
-          @include Responsive(MD) {
-            margin-bottom: 30px;
-          }
         }
+        .follow__ford-icon{
+          display: flex;
+          gap: 1rem;
+        }
+        
 
-        @include Responsive(MD) {
+        @include Responsive(XL) {
           flex-wrap: wrap;
           padding: 0;
+          flex-direction: column;
+          align-items: flex-start;
+          span{
+            margin-bottom: 30px;
+          }
         }
       }
     }
