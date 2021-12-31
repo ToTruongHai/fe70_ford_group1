@@ -1,3 +1,12 @@
+// VIEW ALL 
+let viewAll = document.querySelectorAll('.toggle');
+for (let i = 0; i < viewAll.length; i++) {
+  viewAll[i].addEventListener('click',function(){
+    viewAll[i].parentNode.classList.toggle('active');
+  })
+}
+//END VIEW-ALL
+
 // START FOOTER CATEGORY SCRIPT
 window.onresize = function () {
   categoryResponsive();

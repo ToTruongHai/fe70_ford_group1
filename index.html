@@ -14,8 +14,16 @@
   <link href="//db.onlinewebfonts.com/c/3cbd18ee75a23e404e78614692aa64e8?family=Ford+Antenna+Light" rel="stylesheet"
     type="text/css" />
   <!-- FontAwesome -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
     integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- End FontAwesome -->
 
   <!-- main Style -->
   <link rel="stylesheet" href="./css/app.css" />
@@ -54,9 +62,120 @@
       </div>
     </section>
     <!-- END PRODUCTS -->
+
     <!-- START NEWS -->
-    <section class="news"></section>
+    <section class="news">
+      <div class="container">
+        <div class="news__header">
+          <div class="image-full"></div>
+          <div class="image-tablet"></div>
+          <div class="news__header-text">
+            <h1>What's Happening at Ford</h1>
+            <p>The latest technology, news and vehicles.</p>
+          </div>
+        </div>
+        <div class="news__content">
+          <div class="row">
+            <div class="col col-xl-8 col-md-8 col-sm-12 col-12">
+              <a href="" class="new__item">
+                <img src="./images/cq5dam.web.1440.1440(4).jpeg" alt="">
+                <div class="item__overlay">
+                  <div class="item__content left">
+                    <span class="new-text">Our Purpose</span>
+                    <span class="new-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col col-xl-4 col-md-4 col-sm-12 col-12">
+              <div class="row">
+                <div class="col col-12">
+                  <a href="" class="new__item">
+                    <img src="./images/cq5dam.web.1440.1440(5).jpeg" alt="">
+                    <div class="item__overlay">
+                      <div class="item__content">
+                        <span class="new-text">Experience F-150 Lightning™</span>
+                        <span class="new-icon"><i class="fas fa-chevron-right"></i></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col col-12">
+                  <a href="" class="new__item">
+                    <img src="./images/cq5dam.web.1440.1440(6).jpeg" alt="">
+                    <div class="item__overlay">
+                      <div class="item__content">
+                        <span class="new-text">Built for America*</span>
+                        <span class="new-icon"><i class="fas fa-chevron-right"></i></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-hidden-mobile collapse" id="collapseExample">
+            <div class="col col-xl-4 col-md-4 col-sm-12 col-12">
+              <div class="row">
+                <div class="col col-12">
+                  <a href="" class="new__item">
+                    <img src="./images/cq5dam.web.1440.1440(7).jpeg" alt="">
+                    <div class="item__overlay">
+                      <div class="item__content">
+                        <span class="new-text">Meet the All-New 2022 Ford Maverick</span>
+                        <span class="new-icon"><i class="fas fa-chevron-right"></i></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col col-12">
+                  <a href="" class="new__item">
+                    <img src="./images/cq5dam.web.1440.1440(8).jpeg" alt="">
+                    <div class="item__overlay">
+                      <div class="item__content">
+                        <span class="new-text">Custom Order Your Next Ford</span>
+                        <span class="new-icon"><i class="fas fa-chevron-right"></i></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col col-xl-8 col-md-8 col-sm-12 col-12">
+              <a href="" class="new__item">
+                <img src="./images/cq5dam.web.1440.1440(9).jpeg" alt="">
+                <div class="item__overlay">
+                  <div class="item__content">
+                    <span class="new-text">Accessorize Your Ride</span>
+                    <span class="new-icon"><i class="fas fa-chevron-right"></i></span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="view-all-mobile" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <div class="toggle">
+            <!-- <i class="fas fa-plus-circle"></i> -->
+          </div>
+        </a>
+      </div>
+    </section>
     <!-- END NEWS -->
+
+    <!-- RECALLS -->
+    <section class="recalls">
+      <div class="container">
+        <h2></h2>
+        <button></button>
+      </div>
+    </section>
+    <!-- END RECALLS -->
+
+    </section>
+    <!-- END NEWS -->
+
   </main>
   <!-- END MAIN -->
   <!-- START FOOTER -->
@@ -926,8 +1045,10 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
+
   <!-- index Script -->
   <script src="./js/mainScript.js"></script>
+
 </body>
 
 </html>
