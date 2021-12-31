@@ -141,15 +141,15 @@
           i {
             display: none;
           }
-          @include Responsive(XL){
+          @include Responsive(XL) {
             pointer-events: auto;
           }
         }
-        .category__title-tool{
-          @include Responsive(XL){
+        .category__title-tool {
+          @include Responsive(XL) {
             pointer-events: none;
           }
-          @include Responsive(MD){
+          @include Responsive(MD) {
             pointer-events: auto;
           }
         }
@@ -211,7 +211,7 @@
           }
         }
       }
-      @include Responsive(MD) {
+      @media only screen and (max-width: 767px) {
         .category__item--sm {
           .category__title {
             position: relative;
@@ -310,7 +310,7 @@
             padding: 0;
           }
         }
-        @Media only screen and (max-width: 767px) {
+        @media only screen and (max-width: 767px) {
           border-bottom: 1px solid #a7a7a7;
           padding: 0 0 20px 0;
           margin: 0 0 20px 0;
@@ -332,18 +332,17 @@
           color: white;
           margin-right: 30px;
         }
-        .follow__ford-icon{
+        .follow__ford-icon {
           display: flex;
           gap: 1rem;
         }
-        
 
         @include Responsive(XL) {
           flex-wrap: wrap;
           padding: 0;
           flex-direction: column;
           align-items: flex-start;
-          span{
+          span {
             margin-bottom: 30px;
           }
         }
@@ -391,21 +390,21 @@
               padding: 8px 0;
             }
 
-            &:hover{
-              a{
+            &:hover {
+              a {
                 color: $primary-dark;
               }
             }
-
-            @include Responsive(MD){
+            
+            @media only screen and (max-width: 767px) {
               display: block;
             }
           }
         }
       }
-      @include Responsive(MD){
+      @include Responsive(MD) {
         padding: 30px 0;
-        .tertiary__language-icon{
+        .tertiary__language-icon {
           padding: 0;
         }
       }
@@ -415,7 +414,7 @@
           max-height: 50px;
           float: right;
 
-          @include Responsive(MD){
+          @include Responsive(MD) {
             float: left;
             margin-top: 10px;
           }
