@@ -42,18 +42,18 @@
       }
       @media screen {
         .image-full {
-          @media (max-width: $computer) {
+          @media (max-width: $lg) {
             display: block;
           }
-          @media (max-width: $tablet) {
+          @media (max-width: $md) {
             display: none;
           }
         }
         .image-mobile {
-          @media (max-width: $computer) {
+          @media (max-width: $lg) {
             display: none;
           }
-          @media (max-width: $tablet) {
+          @media (max-width: $md) {
             display: block;
           }
         }
@@ -72,18 +72,18 @@
       }
       @media screen {
         .image-full {
-          @media (max-width: $computer) {
+          @media (max-width: $lg) {
             display: block;
           }
-          @media (max-width: $tablet) {
+          @media (max-width: $md) {
             display: none;
           }
         }
         .image-mobile {
-          @media (max-width: $computer) {
+          @media (max-width: $lg) {
             display: none;
           }
-          @media (max-width: $tablet) {
+          @media (max-width: $md) {
             display: block;
           }
         }
