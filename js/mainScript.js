@@ -16,8 +16,10 @@ window.onload = function () {
 };
 let aClickable = document.getElementsByClassName("category__title");
 let divCollapse = document.getElementsByClassName("collappseDiv");
-let toolCollapse = document.getElementsByClassName("category__tool");
 let itemMD = document.getElementsByClassName("category__item--md");
+
+let toolCollapse = document.getElementsByClassName("category__tool");
+let toolTitle = document.getElementsByClassName("category__title-tool");
 
 function categoryResponsive() {
   if ($(document).width() < 1200) {
@@ -30,11 +32,35 @@ function categoryResponsive() {
     $(itemMD).addClass("row");
   }
   if ($(document).width() < 768) {
-    $(toolCollapse).attr("data-toggle", "collapse");
+    $(toolTitle).attr("data-toggle", "collapse");
     $(toolCollapse).addClass("collapse");
   } else {
-    $(toolCollapse).removeAttr("data-toggle");
+    $(toolTitle).removeAttr("data-toggle");
     $(toolCollapse).removeClass("collapse");
   }
 }
 // END FOOTER CATEGORY SCRIPT
+
+// START FIXED-CONTENT SCRIPT
+window.onscroll = function () {
+  scrollFunction();
+};
+let upBtn = document.getElementById("upBtn");
+let lastScrollTop = 0;
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    let st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+      upBtn.style.visibility = "hidden";
+      upBtn.style.opacity = "0";
+    } else {
+      upBtn.style.visibility = "visible";
+      upBtn.style.opacity = "1";
+    }
+    lastScrollTop = st;
+  } else {
+    upBtn.style.visibility = "hidden";
+    upBtn.style.opacity = "0";
+  }
+}
+// END FIXED-CONTENT SCRIPT

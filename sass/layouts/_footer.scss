@@ -1,5 +1,5 @@
 // START PRIVACY
-.privacy {
+.footer__privacy {
   .container {
     .privacy__container--bg {
       background-color: $primary-dark;
@@ -43,7 +43,7 @@
 // END PRIVACY
 
 // START SEARCH
-.search {
+.footer__search {
   .container {
     .search__container--bg {
       background-color: #333;
@@ -124,7 +124,7 @@
 // END SEARCH
 
 // START CATERGORY
-.category {
+.footer__category {
   .container {
     .category__container--bg {
       background-color: #242424;
@@ -137,8 +137,20 @@
           margin-bottom: 20px;
           display: block;
           cursor: context-menu;
+          pointer-events: none;
           i {
             display: none;
+          }
+          @include Responsive(XL) {
+            pointer-events: auto;
+          }
+        }
+        .category__title-tool {
+          @include Responsive(XL) {
+            pointer-events: none;
+          }
+          @include Responsive(MD) {
+            pointer-events: auto;
           }
         }
         ul {
@@ -165,13 +177,46 @@
 
       @include Responsive(XL) {
         .category__item--md {
-        
           .category__title {
-            padding: 0 15px;
             position: relative;
             cursor: pointer;
             padding: 0 15px 20px 15px;
+            border-bottom: 1px solid #333;
+            cursor: pointer;
 
+            @include Responsive(SM) {
+              padding: 0 0 20px 0;
+            }
+
+            i {
+              display: inline;
+              position: absolute;
+              right: 15px;
+              top: 0;
+            }
+          }
+
+          ul {
+            overflow: hidden;
+            border-bottom: 1px solid #333;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            li {
+              padding: 0 15px;
+              a {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        .category__item--sm {
+          .category__title {
+            position: relative;
+            cursor: pointer;
+            padding: 0 0px 20px 15px;
             border-bottom: 1px solid #333;
             cursor: pointer;
             i {
@@ -197,35 +242,10 @@
           }
         }
       }
-      @include Responsive(MD) {
-        .category__item--sm {
-          .category__title {
-            padding: 0 15px;
-            position: relative;
-            cursor: pointer;
-            padding: 0 15px 20px 15px;
-            border-bottom: 1px solid #333;
-            cursor: pointer;
-            i {
-              display: inline;
-              position: absolute;
-              right: 15px;
-              top: 0;
-            }
-          }
-
-          ul {
-            overflow: hidden;
-            border-bottom: 1px solid #333;
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            padding-left: 20px;
-            li {
-              padding: 0 15px;
-              a {
-                border-bottom: none;
-              }
-            }
+      .category__item--sm {
+        .category__title {
+          @include Responsive(SM) {
+            padding: 0 0 20px 0;
           }
         }
       }
@@ -245,3 +265,162 @@
   }
 }
 // END CATEGORY
+
+// START SOCIAL-FOLLOW
+.footer__social-follow {
+  .container {
+    .follow__container--bg {
+      background-color: $primary-dark;
+      padding: 30px 35px;
+
+      @include Responsive(MD) {
+        padding: 30px 20px;
+      }
+      @include Responsive(SM) {
+        padding: 30px 10px;
+      }
+
+      .follow__updates-share {
+        a {
+          .follow__updates,
+          .follow__share {
+            align-items: center;
+            white-space: nowrap;
+            flex-wrap: nowrap;
+
+            span {
+              font-size: 1.7rem;
+              color: #37a9e8;
+
+              @include Responsive(SM) {
+                font-size: 1.3rem;
+              }
+            }
+          }
+
+          .follow__share {
+            @include Responsive(LG) {
+              display: none;
+            }
+          }
+        }
+        @include Responsive(SM) {
+          padding: 0;
+          a {
+            padding: 0;
+          }
+        }
+        @media only screen and (max-width: 767px) {
+          border-bottom: 1px solid #a7a7a7;
+          padding: 0 0 20px 0;
+          margin: 0 0 20px 0;
+          a {
+            padding: 0;
+          }
+        }
+        @include Responsive(XL) {
+          align-items: flex-end;
+        }
+      }
+      .follow__ford {
+        align-items: center;
+        white-space: nowrap;
+        flex-wrap: nowrap;
+
+        span {
+          font-size: 1.1rem;
+          color: white;
+          margin-right: 30px;
+        }
+        .follow__ford-icon {
+          display: flex;
+          gap: 1rem;
+        }
+
+        @include Responsive(XL) {
+          flex-wrap: wrap;
+          padding: 0;
+          flex-direction: column;
+          align-items: flex-start;
+          span {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+// END SOCIAL-FOLLOW
+
+// START TERTIARY
+.footer__tertiary {
+  .container {
+    .tertiary__container--bg {
+      background-color: #f7f7f7;
+      border-color: #e7e7e7;
+      padding: 40px 50px;
+
+      .tertiary__language {
+        .tertiary__language-icon {
+          a {
+            align-items: center;
+            i {
+              font-size: 2rem;
+              margin-right: 20px;
+            }
+            span {
+              font-size: 1.2rem;
+              text-decoration: underline;
+            }
+          }
+        }
+        p {
+          margin: 20px 0;
+          font-size: 1.2rem;
+          color: #555;
+        }
+        .tertiary__shortcut {
+          .tertiary__shortcut-items {
+            display: inline-block;
+            margin: 0 20px 0 0;
+            a {
+              display: block;
+              color: #555;
+              font-size: 1.2rem;
+              padding: 8px 0;
+            }
+
+            &:hover {
+              a {
+                color: $primary-dark;
+              }
+            }
+            
+            @media only screen and (max-width: 767px) {
+              display: block;
+            }
+          }
+        }
+      }
+      @include Responsive(MD) {
+        padding: 30px 0;
+        .tertiary__language-icon {
+          padding: 0;
+        }
+      }
+      .tertiary__logo {
+        img {
+          max-width: 70px;
+          max-height: 50px;
+          float: right;
+
+          @include Responsive(MD) {
+            float: left;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+// END TERTIARY

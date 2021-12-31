@@ -1,0 +1,25 @@
+#upBtn {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 99;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  cursor: pointer;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  transition: all .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover{
+      opacity: 0.5 !important;
+  }
+}
