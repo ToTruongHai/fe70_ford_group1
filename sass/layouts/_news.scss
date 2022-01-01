@@ -109,7 +109,7 @@
     padding: 15px 0;
     cursor: pointer;
     width: 100%;
-    @include Responsive(MD) {
+    @media only screen and (max-width:767px) {
       display: block;
       padding: 24px 0;
       background-color: #f2f2f2;
