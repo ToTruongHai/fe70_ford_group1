@@ -28,17 +28,17 @@ let newsViewAllCollapseBtn = document.getElementById("newsViewAllCollapseBtn")
 // khoa-sudo
 
 function categoryResponsive() {
-  if ($(document).width() < 1200) {
+  let screenWidth = $(document).width()+17;
+  if (screenWidth < 1200) {
     $(aClickable).attr("data-toggle", "collapse");
     $(divCollapse).addClass("collapse");
     $(itemMD).removeClass("row");
-    
     } else {
     $(aClickable).removeAttr("data-toggle");
     $(divCollapse).removeClass("collapse");
     $(itemMD).addClass("row");
   }
-  if ($(document).width() < 768) {
+  if (screenWidth < 768) {
     $(toolTitle).attr("data-toggle", "collapse");
     $(toolCollapse).addClass("collapse");
 
