@@ -7,6 +7,7 @@ for (let i = 0; i < viewAll.length; i++) {
 }
 //END VIEW-ALL
 
+
 // START FOOTER CATEGORY SCRIPT
 window.onresize = function () {
   categoryResponsive();
