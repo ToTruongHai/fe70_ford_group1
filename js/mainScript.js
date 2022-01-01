@@ -22,12 +22,18 @@ let itemMD = document.getElementsByClassName("category__item--md");
 let toolCollapse = document.getElementsByClassName("category__tool");
 let toolTitle = document.getElementsByClassName("category__title-tool");
 
+// khoa-sudo
+let newsCollapse = document.getElementById("collapseNews");
+let newsViewAllCollapseBtn = document.getElementById("newsViewAllCollapseBtn")
+// khoa-sudo
+
 function categoryResponsive() {
   if ($(document).width() < 1200) {
     $(aClickable).attr("data-toggle", "collapse");
     $(divCollapse).addClass("collapse");
     $(itemMD).removeClass("row");
-  } else {
+    
+    } else {
     $(aClickable).removeAttr("data-toggle");
     $(divCollapse).removeClass("collapse");
     $(itemMD).addClass("row");
@@ -35,9 +41,19 @@ function categoryResponsive() {
   if ($(document).width() < 768) {
     $(toolTitle).attr("data-toggle", "collapse");
     $(toolCollapse).addClass("collapse");
+
+    // khoa-sudo
+    $(newsViewAllCollapseBtn).attr("data-toggle", "collapse");
+    $(newsCollapse).addClass("collapse");
+    // khoa-sudo
   } else {
     $(toolTitle).removeAttr("data-toggle");
     $(toolCollapse).removeClass("collapse");
+
+    // khoa-sudo
+    $(newsViewAllCollapseBtn).removeAttr("data-toggle", "collapse");
+    $(newsCollapse).removeClass("collapse");
+    // khoa-sudo
   }
 }
 // END FOOTER CATEGORY SCRIPT
