@@ -1,0 +1,50 @@
+.recalls {
+  .spacerComponent {
+    .spacer {
+      display: block;
+      background-color: $bg-color;
+      height: 16px;
+      border: 1px solid $bg-color;
+    }
+  }
+  .sub-component-wrap {
+    padding: 25px;
+    position: relative;
+    background-color: $bg-color;
+    border: 1px solid $bg-color;
+  }
+  .content__recalls {
+    padding: 48px 0;
+    background-color: $bg-color;
+    h2 {
+      color: rgb(217, 46, 20);
+      font-size: 28px;
+      line-height: 36px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      @media only screen and (min-width: 1440px) {
+        font-size: 34px;
+        line-height: 40px;
+      }
+      @media only screen and (min-width: 992px) {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      @media only screen and (min-width: 768px) {
+        font-size: 30px;
+        line-height: 36px;
+      }
+    }
+    .btn-text {
+      font-family: "fordngbs-antenna-cond-regular", "fordngbs-antenna-re", arial,
+        helvetica, sans-serif;
+      color: #fff;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+      letter-spacing: 1px;
+    }
+  }
+}

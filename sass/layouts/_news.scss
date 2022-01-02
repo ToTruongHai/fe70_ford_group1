@@ -88,9 +88,12 @@
       background: rgba(0, 9, 91, 0.9);
       border: none;
       .item__content {
+        font-family: "fordngbs-antenna-re", arial, helvetica, sans-serif;
+        font-weight: normal;
         padding: 16px;
         font-size: 14px;
         line-height: 24px;
+        letter-spacing: 1px;
         border: none;
         position: absolute;
         bottom: 0;
@@ -109,7 +112,7 @@
     padding: 15px 0;
     cursor: pointer;
     width: 100%;
-    @include Responsive(MD) {
+    @media only screen and (max-width: 767px) {
       display: block;
       padding: 24px 0;
       background-color: #f2f2f2;
@@ -117,14 +120,16 @@
         text-align: center;
         &:before {
           content: "View All"+"  "+"\f055";
-          font-family: "Font Awesome 5 Free","FontAwesome",'fordngbs-antenna-cond-regular','fordngbs-antenna-re',arial,helvetica,sans-serif;
+          font-family: "Font Awesome 5 Free", "FontAwesome",
+            "fordngbs-antenna-cond-regular", "fordngbs-antenna-re", arial,
+            helvetica, sans-serif;
           font-size: 18px;
           line-height: 1;
           letter-spacing: 1px;
           font-weight: 400;
           color: $second-color;
         }
-        i{
+        i {
           margin-left: 3px;
           font-size: 15px;
           color: $second-color;
@@ -133,7 +138,9 @@
     }
     &.active .toggle::before {
       content: "View Less"+"  "+"\f056";
-      font-family: "Font Awesome 5 Free","FontAwesome",'fordngbs-antenna-cond-regular','fordngbs-antenna-re',arial,helvetica,sans-serif;
+      font-family: "Font Awesome 5 Free", "FontAwesome",
+        "fordngbs-antenna-cond-regular", "fordngbs-antenna-re", arial, helvetica,
+        sans-serif;
       color: $second-color;
       display: inline;
       font-weight: 400;
@@ -148,4 +155,3 @@
     }
   }
 }
-
