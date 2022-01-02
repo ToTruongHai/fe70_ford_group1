@@ -16,10 +16,10 @@
     border: 1px solid $primary-light;
     color: $primary-light;
   }
-  &:hover{
+  &:hover {
     color: $primary-light;
   }
-  
+
   &.collapsed {
     i {
       transform: rotateZ(180deg);
@@ -27,14 +27,40 @@
   }
 }
 
-.btn--privacy{
-    background-color: $primary-light;
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    border-radius: 0px;
+.btn--privacy {
+  background-color: $primary-light;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 0px;
 
-    &:hover{
-        background-color: white;
-    }
+  &:hover {
+    background-color: white;
+  }
+}
+
+.btn--recall,
+.btn--product {
+  margin-top: 32px;
+  background-color: $second-color;
+  border: 1px solid $second-color;
+  padding: 12px 30px 11px;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 14%);
+  // transition: all 0.5s;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  &:hover {
+    background-color: #1700f4;
+    border-color: #1700f4;
+    transform: scale(1.07);
+    box-shadow: 0 7px 6px 0 rgb(0 0 0 / 30%);
+  }
+  &:focus {
+    outline-offset: 8px;
+    outline: 1px solid #00095b !important;
+  }
+  &:active:focus {
+    outline-color: #00095b !important;
+  }
 }
