@@ -1,3 +1,25 @@
+.ford-mustang {
+  display: inline-block;
+  background-image: url(../images/ford-mustang.svg);
+  height: 20px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+.ford-bronco {
+  display: inline-block;
+  background-image: url(../images/ford-bronco.svg);
+  height: 30px;
+  width: 27px;
+  background-repeat: no-repeat;
+}
+.locations-icon {
+  font-size: 2rem;
+  color: $primary-dark;
+}
+.brand__info-icon {
+  width: 15%;
+}
+
 .icon--round {
   min-width: 40px;
   height: 40px;
