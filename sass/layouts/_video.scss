@@ -1,0 +1,28 @@
+.video {
+  margin-top: 10rem;
+  &__container {
+    padding: 0 10rem;
+    video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .video__content {
+      background-color: #f7f7f7;
+      padding: 1rem 0 5rem 0;
+      h3 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+      }
+      p {
+        font-size: 1.8rem;
+        padding: 0 20rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        padding-bottom: 5rem;
+      }
+    }
+  }
+}
