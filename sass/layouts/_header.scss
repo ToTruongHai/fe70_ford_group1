@@ -1,0 +1,92 @@
+header {
+  .eyebrow {
+    background-color: #f3f3f3;
+    padding: 5px 10rem;
+    // left
+    &__left-item {
+      margin-right: 3rem;
+      a {
+        color: $primary-dark;
+        .eyebrow__left-text {
+          margin-left: 5px;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+        &:hover {
+          .eyebrow__left-text {
+            color: $primary-light;
+          }
+          .ford-mustang {
+            background-image: url(../images/ford-mustang-1.svg);
+          }
+          .ford-bronco {
+            background-image: url(../images/ford-bronco-1.svg);
+          }
+        }
+      }
+    }
+    // right
+    &__right-item {
+      margin-right: 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      a.eyebrow__right-locations {
+        span {
+          color: #2861a4;
+          margin-left: 5px;
+        }
+        &:hover {
+          .locations-icon {
+            color: $primary-light;
+          }
+        }
+      }
+
+      a.eyebrow__right-language {
+        color: black;
+        &:hover {
+          color: $primary-light;
+        }
+      }
+    }
+  }
+
+  .brand {
+    padding: 2rem 10rem;
+    // logo
+    &__logo {
+      img {
+        width: 50%;
+      }
+    }
+    // options
+    &__options {
+      margin-left: -3rem;
+      &-item {
+        margin-right: 2rem;
+        a {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: $primary-light;
+          &:hover {
+            color: $primary-dark;
+          }
+        }
+      }
+    }
+    // information
+    &__info {
+      &-item {
+        margin-right: 2rem;
+        &:hover .brand__info-text {
+          color: $primary-dark;
+        }
+        .brand__info-text {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: $primary-light;
+        }
+      }
+    }
+  }
+}
