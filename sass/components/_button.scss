@@ -22,6 +22,7 @@
 .btn-blue-scale:hover::before {
   background-color: #1700f4;
   transform: scale(1.05);
+  box-shadow: 0 7px 6px 0 rgb(0 0 0 / 30%);
 }
 
 
