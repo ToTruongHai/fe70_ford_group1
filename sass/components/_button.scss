@@ -1,3 +1,29 @@
+.btn-blue-scale {
+  position: relative;
+  color: white !important;
+  padding: 1.2rem 3rem;
+  font-size: 1.7rem;
+  z-index: 1;
+}
+.btn-blue-scale::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  border-radius: 2rem;
+  background-color: $second-color;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 14%);
+}
+.btn-blue-scale:hover::before {
+  background-color: #1700f4;
+  transform: scale(1.05);
+}
+
 .btn--disclosures {
   width: 100%;
   background-color: transparent;
@@ -39,28 +65,32 @@
   }
 }
 
-.btn--recall,
-.btn--product {
-  margin-top: 32px;
-  background-color: $second-color;
-  border: 1px solid $second-color;
-  padding: 12px 30px 11px;
-  border-radius: 30px;
-  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 14%);
-  // transition: all 0.5s;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
-  &:hover {
+.btn-blue-scale-2 {
+  position: relative;
+  color: white !important;
+  padding: 1.2rem 3rem;
+  font-size: 1.7rem;
+  z-index: 1;
+  top: 48px;
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+    border-radius: 2rem;
+    background-color: $second-color;
+    box-shadow: 0 2px 4px 2px rgb(0 0 0 / 14%);
+    
+  }
+  &:hover::before {
     background-color: #1700f4;
-    border-color: #1700f4;
-    transform: scale(1.07);
+    transform: scale(1.05);
     box-shadow: 0 7px 6px 0 rgb(0 0 0 / 30%);
-  }
-  &:focus {
-    outline-offset: 8px;
-    outline: 1px solid #00095b !important;
-  }
-  &:active:focus {
-    outline-color: #00095b !important;
+    border: none;
   }
 }
