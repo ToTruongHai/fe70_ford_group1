@@ -16,6 +16,9 @@
   .content__recalls {
     padding: 48px 0;
     background-color: $bg-color;
+    a{
+      top: 48px;
+    }
     h2 {
       color: rgb(217, 46, 20);
       font-size: 28px;
