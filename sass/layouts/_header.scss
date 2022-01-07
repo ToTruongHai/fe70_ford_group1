@@ -6,6 +6,23 @@ header {
   z-index: 2;
   nav {
     padding: 0 !important;
+    .responsive-div {
+      @include resNormal(tablet) {
+        display: flex !important;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0 8px 4px -4px rgb(0 0 0 / 20%);
+        padding: 1.5rem 3rem;
+      }
+      .navbar-brand{
+        img{
+          @include resNormal(tablet){
+            width: 93px;
+            height: 35px;
+          }
+        }
+      }
+    }
     .eyebrow {
       background-color: #f3f3f3;
       padding: 5px 10rem;
@@ -70,7 +87,7 @@ header {
     }
 
     .brand {
-      padding: 2rem 10rem;
+      padding: 16px 10rem;
       background-color: white;
       box-shadow: 0 8px 4px -4px rgb(0 0 0 / 20%);
       // logo

@@ -2,27 +2,31 @@
   position: relative;
   color: white !important;
   padding: 1.2rem 3rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-family: "fordngbs-antenna-cond-regular", "fordngbs-antenna-re", arial,
+    helvetica, sans-serif;
+  line-height: 18px;
+  letter-spacing: 1px;
   z-index: 1;
-}
-.btn-blue-scale::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
-    box-shadow 0.3s ease-in-out;
-  border-radius: 2rem;
-  background-color: $second-color;
-  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 14%);
-}
-.btn-blue-scale:hover::before {
-  background-color: #1700f4;
-  transform: scale(1.05);
-  box-shadow: 0 7px 6px 0 rgb(0 0 0 / 30%);
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
+    border-radius: 2rem;
+    background-color: $second-color;
+    box-shadow: 0 2px 4px 2px rgb(0 0 0 / 14%);
+  }
+  &:hover::before {
+    background-color: #1700f4;
+    transform: scale(1.05);
+    box-shadow: 0 7px 6px 0 rgb(0 0 0 / 30%);
+  }
 }
 
 .btn--disclosures {
@@ -87,7 +91,6 @@
     border-radius: 2rem;
     background-color: $second-color;
     box-shadow: 0 2px 4px 2px rgb(0 0 0 / 14%);
-    
   }
   &:hover::before {
     background-color: #1700f4;

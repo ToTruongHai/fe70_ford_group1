@@ -2,26 +2,80 @@
   margin-top: 10rem;
   &__container {
     padding: 0 10rem;
-    video {
-      width: 100%;
-      height: 100%;
+    @include resNormal(computer) {
+      padding: 0 4rem;
     }
-
+    @include Responsive(MD) {
+      padding: 0 3rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .video__intro {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
+      @include Responsive(MD) {
+        order: 2;
+      }
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
     .video__content {
       background-color: #f7f7f7;
-      padding: 1rem 0 5rem 0;
+      padding: 1rem 0 3rem 0;
+      @include Responsive(MD) {
+        order: 1;
+      }
       h3 {
         font-size: 2.5rem;
         font-weight: 900;
         padding-top: 3rem;
         padding-bottom: 1rem;
+        color: $second-color;
+        @include Responsive(MD) {
+          font-size: 2.2rem;
+          padding-top: 1rem;
+        }
       }
       p {
         font-size: 1.8rem;
         padding: 0 20rem;
         line-height: 1.5;
         letter-spacing: 1px;
-        padding-bottom: 5rem;
+        @include Responsive(XL){
+          padding: 0 3rem;
+          max-width: 95%;
+          margin: 0 auto;
+        }
+        // @include resNormal(tablet){
+        //   padding: 0 3rem;
+        // }
+        @include Responsive(LG){
+          padding: 0;
+          max-width: 95%;
+        }
+        @include Responsive(MD) {
+          font-size: 1.5rem;
+          padding: 0;
+          padding-top: 1rem;
+        }
+      }
+    }
+
+    .below-video {
+      padding: 1.3rem 3rem 4.5rem 3rem;
+      background-color: #f7f7f7;
+      @include Responsive(MD) {
+        order: 3;
+        padding: 4.5rem 3rem;
       }
     }
   }

@@ -1,3 +1,6 @@
 .banner {
   margin-top: 117px;
+  @include resNormal(tablet){
+    margin-top: 74px;
+  }
 }
