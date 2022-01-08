@@ -56,43 +56,47 @@
             data-toggle="collapse"
             data-target="#collapsibleNavbar"
           >
-            <span class="navbar-toggler-icon">
+            <span
+              class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+            >
               <i class="fas fa-bars"></i>
             </span>
           </button>
         </div>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <!-- Header top -->
-          <div class="container d-flex justify-content-between eyebrow">
-            <!-- left -->
-            <div class="eyebrow__left">
-              <ul class="d-flex align-items-center eyebrow__left-list">
-                <!-- item -->
-                <li class="eyebrow__left-item">
-                  <a class="d-flex align-items-center" href="/">
-                    <span class="eyebrow__left-icon ford-mustang"></span>
-                    <span class="eyebrow__left-text">MUSTANG</span>
-                  </a>
-                </li>
-                <!-- item -->
-                <li class="eyebrow__left-item">
-                  <a class="d-flex align-items-center separator" href="/">
-                    <span class="eyebrow__left-icon ford-bronco"></span>
-                    <span class="eyebrow__left-text">BRONCO</span>
-                  </a>
-                </li>
-                <!-- item -->
-                <li class="eyebrow__left-item">
-                  <a class="d-flex align-items-center separator" href="">
-                    <span class="eyebrow__left-text">CERTIFIED USED</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
 
-            <!-- right -->
-            <div class="d-flex align-items-center eyebrow__right">
-              <div class="eyebrow__right-item">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="responsive-options">
+            <ul>
+              <li class="d-flex justify-content-between border-btm">
+                <a href="">
+                  <span>VEHICLES</span>
+                </a>
+                <i class="fas fa-chevron-down arrow_down"></i>
+              </li>
+              <li class="d-flex justify-content-between border-btm">
+                <a class="d-flex align-items-center" href="/">
+                  <img
+                    class="brand__info-icon"
+                    src="./images/user-icon.svg"
+                    alt=""
+                  />
+                  <span>MY ACCOUNT</span>
+                </a>
+                <i class="fas fa-chevron-down arrow_down"></i>
+              </li>
+              <li class="d-flex justify-content-between border-btm">
+                <a href="/">
+                  <span>FINANCE</span>
+                </a>
+                <i class="fas fa-chevron-down arrow_down"></i>
+              </li>
+              <li class="d-flex justify-content-between border-btm">
+                <a href="/">
+                  <span>SUPPORT & SERVICE</span>
+                </a>
+                <i class="fas fa-chevron-down arrow_down"></i>
+              </li>
+              <li class="d-flex justify-content-between border-btm">
                 <a
                   class="d-flex align-items-center eyebrow__right-locations"
                   href="/"
@@ -100,73 +104,149 @@
                   <i class="fas fa-map-marker-alt locations-icon"></i>
                   <span>Dealership Locations</span>
                 </a>
-              </div>
-              <div class="eyebrow__right-item">
-                <a class="eyebrow__right-language" href="/">EN</a>
-              </div>
+                <i class="fas fa-chevron-down arrow_down"></i>
+              </li>
+              <li class="d-flex justify-content-between border-btm">
+                <a class="eyebrow__right-language" href="/">
+                  <span>EN</span>
+                </a>
+                <i class="fas fa-chevron-down arrow_down"></i>
+              </li>
+            </ul>
+
+            <ul
+              class="d-flex align-items-center justify-content-center eyebrow__left-list responsive-brand"
+            >
+              <!-- item -->
+              <li class="eyebrow__left-item">
+                <a class="d-flex align-items-center flex-column" href="/">
+                  <span class="eyebrow__left-icon ford-mustang"></span>
+                  <span class="eyebrow__left-text">MUSTANG</span>
+                </a>
+              </li>
+              <!-- item -->
+              <li class="eyebrow__left-item">
+                <a class="d-flex align-items-center flex-column" href="/">
+                  <span class="eyebrow__left-icon ford-bronco"></span>
+                  <span class="eyebrow__left-text">BRONCO</span>
+                </a>
+              </li>
+              <!-- item -->
+              <li class="eyebrow__left-item">
+                <a class="d-flex align-items-center flex-column" href="">
+                  <span class="eyebrow__left-text">CERTIFIED USED</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
+        <!-- Header top -->
+        <div class="container d-flex justify-content-between eyebrow">
+          <!-- left -->
+          <div class="eyebrow__left">
+            <ul class="d-flex align-items-center eyebrow__left-list">
+              <!-- item -->
+              <li class="eyebrow__left-item">
+                <a class="d-flex align-items-center" href="/">
+                  <span class="eyebrow__left-icon ford-mustang"></span>
+                  <span class="eyebrow__left-text">MUSTANG</span>
+                </a>
+              </li>
+              <!-- item -->
+              <li class="eyebrow__left-item">
+                <a class="d-flex align-items-center separator" href="/">
+                  <span class="eyebrow__left-icon ford-bronco"></span>
+                  <span class="eyebrow__left-text">BRONCO</span>
+                </a>
+              </li>
+              <!-- item -->
+              <li class="eyebrow__left-item">
+                <a class="d-flex align-items-center separator" href="">
+                  <span class="eyebrow__left-text">CERTIFIED USED</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- right -->
+          <div class="d-flex align-items-center eyebrow__right">
+            <div class="eyebrow__right-item">
+              <a
+                class="d-flex align-items-center eyebrow__right-locations"
+                href="/"
+              >
+                <i class="fas fa-map-marker-alt locations-icon"></i>
+                <span>Dealership Locations</span>
+              </a>
+            </div>
+            <div class="eyebrow__right-item">
+              <a class="eyebrow__right-language" href="/">EN</a>
             </div>
           </div>
         </div>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <!-- Header bottom -->
-          <div class="container d-flex align-items-center brand">
-            <!-- logo -->
+        <!-- </div> -->
+        <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
+        <!-- Header bottom -->
+        <div class="container d-flex align-items-center brand">
+          <!-- logo -->
 
-            <a class="navbar-brand brand__logo" href="">
-              <img src="./images/ford-logo.jpg" alt="" />
-            </a>
+          <a class="brand__logo" href="">
+            <img src="./images/ford-logo.jpg" alt="" />
+          </a>
 
-            <!-- Options -->
-            <div class="brand__options">
-              <ul class="d-flex align-items-center brand__options-list">
-                <li class="brand__options-item">
-                  <a href="/">SUVS & CROSSOVERS</a>
-                </li>
-                <li class="brand__options-item">
-                  <a href="/">TRUCKS & VANS</a>
-                </li>
-                <li class="brand__options-item">
-                  <a href="/">ELECTRIFIED</a>
-                </li>
-                <li class="brand__options-item">
-                  <a href="/">CARS</a>
-                </li>
-                <li class="brand__options-item">
-                  <a href="/">ALL VEHICLES</a>
-                </li>
-              </ul>
-            </div>
+          <!-- Options -->
+          <div class="brand__options">
+            <ul class="d-flex align-items-center brand__options-list">
+              <li class="brand__options-item">
+                <a href="/">SUVS & CROSSOVERS</a>
+              </li>
+              <li class="brand__options-item">
+                <a href="/">TRUCKS & VANS</a>
+              </li>
+              <li class="brand__options-item">
+                <a href="/">ELECTRIFIED</a>
+              </li>
+              <li class="brand__options-item">
+                <a href="/">CARS</a>
+              </li>
+              <li class="brand__options-item">
+                <a href="/">ALL VEHICLES</a>
+              </li>
+            </ul>
+          </div>
 
-            <!-- Information -->
-            <div class="ml-auto brand__info">
-              <ul class="d-flex align-items-center brand__info-list">
-                <li class="brand__info-item">
-                  <a
-                    class="d-flex align-items-center justify-content-end"
-                    href="/"
-                  >
-                    <img
-                      class="brand__info-icon"
-                      src="./images/user-icon.svg"
-                      alt=""
-                    />
-                    <span class="brand__info-text">MY ACCOUNT</span>
-                  </a>
-                </li>
-                <li class="brand__info-item">
-                  <a href="/">
-                    <span class="brand__info-text">FINANCE</span>
-                  </a>
-                </li>
-                <li class="brand__info-item">
-                  <a href="/">
-                    <span class="brand__info-text">SUPPORT & SERVICE</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <!-- Information -->
+          <div class="ml-auto brand__info">
+            <ul class="d-flex align-items-center brand__info-list">
+              <li class="brand__info-item">
+                <a
+                  class="d-flex align-items-center justify-content-end"
+                  href="/"
+                >
+                  <img
+                    class="brand__info-icon"
+                    src="./images/user-icon.svg"
+                    alt=""
+                  />
+                  <span class="brand__info-text">MY ACCOUNT</span>
+                </a>
+              </li>
+              <li class="brand__info-item">
+                <a href="/">
+                  <span class="brand__info-text">FINANCE</span>
+                </a>
+              </li>
+              <li class="brand__info-item">
+                <a href="/">
+                  <span class="brand__info-text">SUPPORT & SERVICE</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+        <!-- </div> -->
       </nav>
     </header>
     <!-- END HEADER -->

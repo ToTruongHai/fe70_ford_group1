@@ -4,6 +4,11 @@
   height: 20px;
   width: 50px;
   background-repeat: no-repeat;
+  @include resNormal(tablet){
+    width: 65px;
+    height: 40px;
+    background-size: 100% 100%;
+  }
 }
 .ford-bronco {
   display: inline-block;
@@ -11,10 +16,19 @@
   height: 30px;
   width: 27px;
   background-repeat: no-repeat;
+  @include resNormal(tablet){
+    width: 65px;
+    height: 40px;
+    background-size: 100% 100%;
+  }
 }
 .locations-icon {
   font-size: 2rem;
   color: $primary-dark;
+  @include resNormal(tablet){
+    color: $primary-light;
+    margin-right: 8px;
+  }
 }
 .brand__info-icon {
   width: 15%;

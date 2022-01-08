@@ -1,5 +1,8 @@
 .banner {
-  margin-top: 117px;
+  margin-top: 109px;
+  @include Responsive(XL){
+    margin-top: 99px;
+  }
   @include resNormal(tablet){
     margin-top: 74px;
   }
