@@ -14,26 +14,78 @@ header {
         box-shadow: 0 8px 4px -4px rgb(0 0 0 / 20%);
         padding: 1.5rem 3rem;
       }
-      .navbar-brand{
-        img{
-          @include resNormal(tablet){
+      .navbar-brand {
+        img {
+          @include resNormal(tablet) {
             width: 93px;
             height: 35px;
           }
         }
       }
     }
+
+    .responsive-options {
+      @include resNormal(tablet-m){
+        display: none !important;
+      }
+      ul {
+        background-color: white;
+        li.border-btm {
+          padding: 2rem;
+          border-bottom: 1px solid #8080803b;
+          a {
+            span {
+              font-size: 1.3rem;
+              color: $primary-light;
+              font-weight: 600;
+            }
+          }
+          i.arrow_down {
+            color: $primary-light;
+            display: flex;
+            align-items: center;
+          }
+          &:hover {
+            cursor: pointer;
+            span {
+              color: $primary-dark;
+            }
+            i.arrow_down {
+              color: $primary-dark;
+            }
+          }
+        }
+      }
+    }
+
+    .responsive-brand{
+      background-color: white;
+      padding: 2rem;
+    }
+
     .eyebrow {
       background-color: #f3f3f3;
       padding: 5px 10rem;
+      @include resNormal(tablet) {
+        display: none !important;
+      }
       // left
       &__left-item {
+        @include resNormal(tablet) {
+          height: 50px;
+          display: flex;
+          align-items: flex-end;
+          margin-right: 2rem;
+        }
         a {
           color: $primary-dark;
           .eyebrow__left-text {
             margin-left: 5px;
             font-size: 1.2rem;
             font-weight: 600;
+            @include resNormal(tablet){
+              margin-top: 3px;
+            }
           }
           &:hover {
             .eyebrow__left-text {
@@ -90,6 +142,9 @@ header {
       padding: 16px 10rem;
       background-color: white;
       box-shadow: 0 8px 4px -4px rgb(0 0 0 / 20%);
+      @include resNormal(tablet) {
+        display: none !important;
+      }
       // logo
       &__logo {
         img {
