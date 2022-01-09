@@ -12,7 +12,7 @@ header {
         justify-content: space-between;
         background-color: white;
         box-shadow: 0 8px 4px -4px rgb(0 0 0 / 20%);
-        padding: 1.5rem 3rem;
+        padding: 2rem;
       }
       .navbar-brand {
         img {
@@ -25,11 +25,10 @@ header {
     }
 
     .responsive-options {
-      @include resNormal(tablet-m){
+      @include resNormal(tablet-m) {
         display: none !important;
       }
       ul {
-        background-color: white;
         li.border-btm {
           padding: 2rem;
           border-bottom: 1px solid #8080803b;
@@ -41,6 +40,7 @@ header {
             }
           }
           i.arrow_down {
+            font-size: 1.3rem;
             color: $primary-light;
             display: flex;
             align-items: center;
@@ -56,11 +56,13 @@ header {
           }
         }
       }
-    }
-
-    .responsive-brand{
-      background-color: white;
-      padding: 2rem;
+      .responsive-brand {
+        padding: 2rem;
+      }
+      .white{
+        height: 600px;
+        background-color: white;
+      }
     }
 
     .eyebrow {
@@ -83,7 +85,7 @@ header {
             margin-left: 5px;
             font-size: 1.2rem;
             font-weight: 600;
-            @include resNormal(tablet){
+            @include resNormal(tablet) {
               margin-top: 3px;
             }
           }
